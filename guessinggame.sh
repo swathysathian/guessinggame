@@ -1,7 +1,8 @@
 echo "enter the count" 
 read count
 
-function count1{
+function count1
+{
   let m=$(ls | wc -l)-1
 
   while [[ $count -ne $m ]]
