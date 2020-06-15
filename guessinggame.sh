@@ -1,8 +1,5 @@
-read -p "enter the count" count
-
-
-
-
+echo "enter the count" 
+read count
 
 function count1{
   let m=$(ls | wc -l)-1
