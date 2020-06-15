@@ -1,23 +1,25 @@
-function count1
-{
-  
-  let s=1
-  while[["$s" -gt 0]]
-  do  
-    if[["$count" -eq "$m"]]
-    then
-      echo "Congratulations"
-      break
-    
-    elif[["$count" -gt "$m"]]
-      echo "Too High"
-    
-    else
-      echo "Too Low"
-    fi
-  done
- }
+read -p "enter the count" count
 
-read -p "Enter the no of files in current directory" count
-let m=$(ls -1 | wc -l)
-count1
+
+
+
+
+function count1{
+  let m=$(ls | wc -l)-1
+
+  while [[ $count -ne $m ]]
+  do
+	  if [[ $count -gt $m ]]
+	  then
+		  echo "Too high"
+	  else [[ $count -lt $m ]]
+		  echo "Too low!"
+	  fi
+	  echo "Please guess again:"
+	  read count
+  done
+
+	
+}
+
+echo "Congratulations! "
