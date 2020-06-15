@@ -1,6 +1,3 @@
-echo "enter the count" 
-read count
-
 function count1
 {
   let m=$(ls | wc -l)-1
@@ -15,9 +12,12 @@ function count1
 	  fi
 	  echo "Please try again"
 	  read count
-  done
-
-	
+  done	
 }
+
+echo "enter the count" 
+read count
+count1
+
 
 echo "Congratulations! "
