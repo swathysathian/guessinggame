@@ -1,5 +1,5 @@
 README.md: 
-	echo '# The Unix Workbench project:Guessing Game' > README.md
+	echo '# Guessing Game' > README.md
 
 	date >> README.md
 
