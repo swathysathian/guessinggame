@@ -13,7 +13,7 @@ function count1
 	  else [[ $count -lt $m ]]
 		  echo "Too low!"
 	  fi
-	  echo "Please guess again:"
+	  echo "Please try again"
 	  read count
   done
 
